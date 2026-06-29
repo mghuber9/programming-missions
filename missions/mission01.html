@@ -16,185 +16,177 @@
     <section class="card">
       <h2>Mission Brief</h2>
 
-<p>
-Imagine you built a robot and gave it instructions.
-</p>
+      <p>Imagine you built a robot and gave it instructions.</p>
+      <p>But the robot never tells you what it's doing.</p>
 
-<p>
-But the robot never tells you what it's doing.
-</p>
+      <ul>
+        <li>Did it understand?</li>
+        <li>Is it working?</li>
+        <li>Did it make a mistake?</li>
+      </ul>
 
-<ul>
-    <li>Did it understand?</li>
-    <li>Is it working?</li>
-    <li>Did it make a mistake?</li>
-</ul>
-
-<p>
-Programmers have the same problem.
-</p>
-
-<p>
-We need a way for the computer to send <strong>messages</strong> back to us.
-</p>
-
-<p>
-One of the easiest ways to do that in JavaScript is with
-<strong>console.log()</strong>.
-</p>
-    </section>
-
-<section class="card">
-
-<h2>Why This Exists</h2>
-
-<p>
-When programmers write code, they constantly want to know what their program is doing.
-</p>
-
-<p>
-JavaScript provides a tool called
-<strong>console.log()</strong>
-that displays messages.
-</p>
-
-<p>
-Normally those messages appear in the browser's
-<strong>Developer Console</strong>.
-</p>
-
-<p>
-Since you're just learning, our Mission Workspace displays those messages below so they're easier to see.
-</p>
-
-</section>
-
-    <section class="card">
-  <h2>Observe</h2>
-
-  <p>
-    This program sends one message.
-  </p>
-
-  <pre><code>console.log("Hello, computer!");</code></pre>
-
-  <p>
-    Click <strong>Run Code</strong>.
-  </p>
-
-  <p>
-    Notice that the message appears in the Mission Workspace below.
-  </p>
-</section>
-
-    <section class="card">
-     <h2>Predict</h2>
-
-<p>
-Before clicking <strong>Run Code</strong>, what message do you think this program will display?
-</p>
-
-<pre><code>console.log("Pizza");</code></pre>
-
-<p>
-Try to predict the answer before running it.
-</p>
+      <p>Programmers have the same problem.</p>
+      <p>We need a way for the computer to send <strong>messages</strong> back to us.</p>
     </section>
 
     <section class="card">
+      <h2>Three Places JavaScript Can Send Messages</h2>
 
-  <h2>Experiment</h2>
+      <table>
+        <tr>
+          <th>JavaScript Tool</th>
+          <th>Sends a message to...</th>
+          <th>Used for...</th>
+        </tr>
+        <tr>
+          <td><code>console.log()</code></td>
+          <td>The programmer</td>
+          <td>Testing and debugging</td>
+        </tr>
+        <tr>
+          <td><code>alert()</code></td>
+          <td>The user</td>
+          <td>Popup messages</td>
+        </tr>
+        <tr>
+          <td><code>document.write()</code></td>
+          <td>The webpage</td>
+          <td>Writing directly on the page</td>
+        </tr>
+      </table>
 
-  <p>
-    Change the words inside the quotation marks.
-  </p>
-
-  <p>
-    Can you make the computer display:
-  </p>
-
-  <ul>
-    <li>Your name</li>
-    <li>Your favorite food</li>
-    <li>Your favorite sport</li>
-  </ul>
-
-  <p>
-    Then click <strong>Run Code</strong>.
-  </p>
-
-  <h3>Mission Workspace</h3>
-
-  <p><strong>Your Code</strong></p>
-
-  <textarea id="codeInput">console.log("Hello, computer!");</textarea>
-
-  <br>
-
-  <button onclick="runCode()">Run Code</button>
-  <button onclick="resetCode()">Reset</button>
-
-  <p><strong>Program Output</strong></p>
-
-  <div id="output" class="output"></div>
-
-</section>
+      <p>
+        In this mission, we will focus on <strong>console.log()</strong>.
+      </p>
+    </section>
 
     <section class="card">
+      <h2>Why This Exists</h2>
 
-  <h2>Challenge</h2>
+      <p>
+        When programmers write code, they constantly want to know what their program is doing.
+      </p>
 
-  <p>
-    Can you make the computer display exactly:
-  </p>
+      <p>
+        <strong>console.log()</strong> lets a program send messages to the programmer.
+      </p>
 
-  <pre><code>I am learning JavaScript!</code></pre>
+      <p>
+        Normally those messages appear in the browser's <strong>Developer Console</strong>.
+      </p>
 
-  <p>
-    After that, make it display one more message of your own choosing.
-  </p>
-
-</section>
+      <p>
+        Since you're just learning, our Mission Workspace shows those console messages below so they're easier to see.
+      </p>
+    </section>
 
     <section class="card">
-      <h2>Mission Debrief</h2>
+      <h2>Observe</h2>
 
-<p>
-Today you learned your first programming tool for communicating with your program.
-</p>
+      <p>This program sends one message to the programmer console:</p>
 
-<p>
-<strong>console.log()</strong> lets your program send messages back to you.
-</p>
+      <pre><code>console.log("Hello, computer!");</code></pre>
 
-<p>
-Professional programmers use this tool every day to understand what their programs are doing.
-</p>
+      <p>
+        Click <strong>Run Code</strong> in the Mission Workspace.
+      </p>
+
+      <p>
+        Notice that the message appears under <strong>Programmer Console</strong>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Predict</h2>
+
+      <p>
+        Before clicking <strong>Run Code</strong>, what message do you think this program will display?
+      </p>
+
+      <pre><code>console.log("Pizza");</code></pre>
+
+      <p>
+        Try to predict the answer before running it.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Experiment</h2>
+
+      <p>
+        Edit the code below. Change the words inside the quotation marks.
+      </p>
+
+      <p>
+        Can you make the programmer console display:
+      </p>
+
+      <ul>
+        <li>Your name</li>
+        <li>Your favorite food</li>
+        <li>Your favorite sport</li>
+      </ul>
+
+      <h3>Mission Workspace</h3>
+
+      <p><strong>Step 1: Edit Your Code</strong></p>
+
+      <textarea id="codeInput">console.log("Hello, computer!");</textarea>
+
+      <br>
+
+      <p><strong>Step 2: Run Your Program</strong></p>
+
+      <button onclick="runCode()">Run Code</button>
+      <button onclick="resetCode()">Reset</button>
+
+      <p><strong>Step 3: Read the Programmer Console</strong></p>
+
+      <div id="output" class="output">Waiting for your program...</div>
+    </section>
+
+    <section class="card">
+      <h2>Challenge</h2>
+
+      <p>
+        Can you make the programmer console display exactly:
+      </p>
+
+      <pre><code>I am learning JavaScript!</code></pre>
+
+      <p>
+        After that, make it display one more message of your own choosing.
+      </p>
     </section>
 
     <section class="card">
       <h2>Bonus Exploration</h2>
 
-<p>
-Delete one quotation mark.
-</p>
+      <p>Delete one quotation mark.</p>
+      <p>Now click <strong>Run Code</strong>.</p>
+      <p>What happened?</p>
+      <p>Why do you think the computer became confused?</p>
 
-<p>
-Now click <strong>Run Code</strong>.
-</p>
+      <p>
+        Every programmer makes mistakes while learning.
+        Errors are simply clues that help us fix our code.
+      </p>
+    </section>
 
-<p>
-What happened?
-</p>
+    <section class="card">
+      <h2>Mission Debrief</h2>
 
-<p>
-Why do you think the computer became confused?
-</p>
+      <p>
+        Today you learned your first programming tool for checking what a program is doing.
+      </p>
 
-<p>
-Every programmer makes mistakes while learning.
-Errors are simply clues that help us fix our code.
-</p>
+      <p>
+        <strong>console.log()</strong> sends messages to the programmer console.
+      </p>
+
+      <p>
+        Later, you will also learn how JavaScript can send messages to the user and write messages directly onto the webpage.
+      </p>
     </section>
   </main>
 
