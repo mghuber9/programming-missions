@@ -56,3 +56,37 @@ button {
   white-space: pre-wrap;
   font-family: Consolas, monospace;
 }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px 8px;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+
+td {
+    padding: 8px 10px;
+    vertical-align: top;
+}
